@@ -1,4 +1,4 @@
-# Ex02 Commercial Website
+  # Ex02 Commercial Website
 ## Date: 16.03.2025
 
 ## AIM
@@ -72,7 +72,6 @@ index.html
           <li><a href="#products">Products</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#" id="login-link">Login</a></li>
         </ul>
       </div>
     </nav>
@@ -123,37 +122,13 @@ index.html
         <p>Phone : +91 81225 93522</p>
       </div>
     </section>
-    <section id="login" class="login-page">
-      <div class="login-container">
-        <h2>Login</h2>
-        <form class="login-form">
-          <input type="email" placeholder="Email" required>
-
-          <input type="password" placeholder="Password" required>
-          <button type="submit" class="btn">Login</button>
-        </form>
-        <a href="#" id="close-login">Close</a>
-      </div>
-    </section>
   </main>
   <footer>
     <div class="container">
       <center><p>&copy; 2024 TechZone. All rights reserved.</p></center>
     </div>
   </footer>
-  <script>
-    const loginLink = document.getElementById('login-link');
-    const loginPage = document.querySelector('.login-page');
-    const closeLogin = document.getElementById('close-login');
-    loginLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      loginPage.style.display = 'block';
-    });
-    closeLogin.addEventListener('click', (e) => {
-      e.preventDefault();
-      loginPage.style.display = 'none';
-    });
-  </script>
+ 
 </body>
 </html>
 ```
@@ -337,38 +312,12 @@ body {
   .contact p:nth-child(3)::before {
     background-image: url('phone-icon.png');
   }
-  .login-page {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1001;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .login-container {
-    max-width: 500px;
-    padding: 30px;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-  }
-  .login-container h2 {
-    color: #64b5f6;
-    margin-bottom: 20px;
-  }
-  
   
 ```
 
 ## OUTPUT
 Home Page
-![page1](https://github.com/user-attachments/assets/eced001a-bc72-4e49-aba7-5cab893e608a)
+![Screenshot 2025-03-17 154052](https://github.com/user-attachments/assets/76ee77a3-5ce1-414b-ac87-c51ecde817ed)
 
 Products Page
 ![Page2](https://github.com/user-attachments/assets/b85a1838-3957-4903-8025-7cca16fa942a)
